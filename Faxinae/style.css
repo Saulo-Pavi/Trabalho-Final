@@ -1,0 +1,243 @@
+/* ==========================================================================
+   PALETA DE CORES GLOBAL (AZUL E DOURADO)
+   ========================================================================== */
+   :root {
+    /* Tons Principais de Azul */
+    --primary-blue: #1e6091;       /* Azul médio para botões, títulos e elementos de destaque */
+    --dark-blue: #184e77;          /* Azul escuro para navbar, rodapé e efeitos hover */
+    
+    /* Tons de Dourado */
+    --primary-gold: #d4af37;       /* Dourado para detalhes, bordas e destaques de texto */
+    --light-gold: #f3e5ab;         /* Dourado suave para fundos ou detalhes leves */
+    
+    /* Cores Neutras e de Apoio */
+    --light-bg: #f8f9fa;           /* Fundo claro para seções secundárias */
+    --text-dark: #333333;          /* Cor padrão de texto para boa leitura */
+  }
+  
+  /* ==========================================================================
+     ESTILOS GERAIS E RESETS LEVES
+     ========================================================================== */
+  body {
+    color: var(--text-dark);
+    font-family: 'Segoe UI', Roboto, 'Helvetica Neue', Arial, sans-serif;
+  }
+  
+  /* ==========================================================================
+     BARRA DE NAVEGAÇÃO (NAVBAR)
+     ========================================================================== */
+  /* Fundo azul escuro da Navbar */
+  .navbar.bg-dark {
+    background-color: var(--dark-blue) !important;
+    border-bottom: 3px solid var(--primary-gold); /* Linha dourada sob o menu */
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.15);
+  }
+  
+  /* Redimensionamento e alinhamento da Logo no cabeçalho */
+  .navbar-brand img {
+    height: 45px; /* Altura recomendada para a logo */
+    width: auto;  /* Mantém a proporção da imagem */
+    display: block;
+  }
+  
+  /* Links do Menu */
+  .navbar-dark .navbar-nav .nav-link {
+    color: #ffffff !important;
+    font-weight: 500;
+    padding: 8px 16px !important;
+    transition: color 0.3s ease, background-color 0.3s ease;
+    border-radius: 4px;
+  }
+  
+  /* Hover e item ativo no Menu */
+  .navbar-dark .navbar-nav .nav-link:hover,
+  .navbar-dark .navbar-nav .nav-link.active {
+    color: var(--primary-gold) !important;
+  }
+  
+  /* Menu Dropdown de Serviços */
+  .dropdown-menu {
+    background-color: #ffffff;
+    border: 1px solid rgba(0, 0, 0, 0.1);
+    border-top: 3px solid var(--primary-gold); /* Destaque dourado no topo do menu suspenso */
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+  }
+  
+  .dropdown-item {
+    color: var(--text-dark);
+    font-weight: 500;
+    padding: 10px 20px;
+    transition: all 0.2s ease;
+  }
+  
+  .dropdown-item:hover {
+    background-color: var(--light-bg);
+    color: var(--primary-blue);
+    padding-left: 24px; /* Efeito suave de deslocamento */
+  }
+  
+  /* ==========================================================================
+     CARROSSEL / HERO SECTION
+     ========================================================================== */
+  /* Ajuste de opacidade e sobreposição nos banners */
+  .carousel-item {
+    position: relative;
+  }
+  
+  /* Legenda centralizada por cima da imagem */
+  .carousel-caption {
+    z-index: 2;
+    text-shadow: 0 2px 4px rgba(0, 0, 0, 0.6);
+  }
+  
+  .carousel-caption h1 {
+    color: #ffffff;
+  }
+  
+  .carousel-caption p {
+    color: var(--light-gold);
+  }
+  
+  /* Indicadores inferiores do Carrossel */
+  .carousel-indicators [data-bs-target] {
+    background-color: var(--primary-gold);
+    height: 4px;
+  }
+  
+  /* ==========================================================================
+     CARDS DE SERVIÇOS
+     ========================================================================== */
+  #servicos .card {
+    border: none;
+    border-top: 4px solid var(--primary-gold) !important; /* Detalhe em dourado no topo do card */
+    border-radius: 8px;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    overflow: hidden;
+  }
+  
+  /* Efeito de elevação ao passar o mouse sobre o card */
+  #servicos .card:hover {
+    transform: translateY(-6px);
+    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.12) !important;
+  }
+  
+  #servicos .card-title {
+    color: var(--primary-blue);
+  }
+  
+  #servicos .card-img-top {
+    height: 220px;
+    object-fit: cover; /* Garante que a imagem preencha a área sem distorcer */
+  }
+  
+  /* ==========================================================================
+     BOTÕES PERSONALIZADOS
+     ========================================================================== */
+  /* Botão Principal em Azul */
+  .btn-primary {
+    background-color: var(--primary-blue) !important;
+    border-color: var(--primary-blue) !important;
+    color: #ffffff !important;
+    font-weight: 600;
+    padding: 10px 20px;
+    border-radius: 6px;
+    transition: all 0.3s ease !important;
+  }
+  
+  .btn-primary:hover,
+  .btn-primary:focus {
+    background-color: var(--dark-blue) !important;
+    border-color: var(--dark-blue) !important;
+    box-shadow: 0 4px 10px rgba(24, 78, 119, 0.3);
+  }
+  
+  /* Botão Secundário / Redes Sociais */
+  .btn-outline-primary {
+    color: var(--primary-blue) !important;
+    border-color: var(--primary-blue) !important;
+    font-weight: 500;
+    transition: all 0.3s ease !important;
+  }
+  
+  .btn-outline-primary:hover {
+    background-color: var(--primary-blue) !important;
+    border-color: var(--primary-blue) !important;
+    color: #ffffff !important;
+  }
+  
+  /* Botão Flutuante do WhatsApp */
+  .whatsapp-btn {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    z-index: 1000;
+    border-radius: 50px;
+    padding: 12px 22px;
+    font-weight: bold;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
+    transition: transform 0.2s ease;
+  }
+  
+  .whatsapp-btn:hover {
+    transform: scale(1.05);
+  }
+  
+  /* ==========================================================================
+     COMPONENTES DE CONTEÚDO E SEÇÕES
+     ========================================================================== */
+  /* Títulos Principais das Seções */
+  h2.fw-bold {
+    color: var(--primary-blue);
+    position: relative;
+    display: inline-block;
+  }
+  
+  /* Accordion Institucional (Sobre Nós) */
+  .accordion-button:not(.collapsed) {
+    background-color: var(--light-bg);
+    color: var(--primary-blue);
+    font-weight: bold;
+  }
+  
+  .accordion-button:focus {
+    box-shadow: 0 0 0 0.25rem rgba(30, 96, 145, 0.25);
+    border-color: var(--primary-blue);
+  }
+  
+  /* Depoimentos */
+  #depoimentos .card {
+    border-left: 3px solid var(--primary-gold) !important; /* Destaque lateral em dourado */
+  }
+  
+  /* Formulário de Contato */
+  .form-control:focus {
+    border-color: var(--primary-blue);
+    box-shadow: 0 0 0 0.25rem rgba(30, 96, 145, 0.25);
+  }
+  
+  /* ==========================================================================
+     CLASSES UTILITÁRIAS DE COR
+     ========================================================================== */
+  .text-gold { 
+    color: var(--primary-gold) !important; 
+  }
+  
+  .bg-gold { 
+    background-color: var(--primary-gold) !important; 
+  }
+  
+  .text-blue {
+    color: var(--primary-blue) !important;
+  }
+  
+  .bg-blue {
+    background-color: var(--primary-blue) !important;
+  }
+  
+  /* ==========================================================================
+     RODAPÉ (FOOTER)
+     ========================================================================== */
+  footer.bg-dark {
+    background-color: var(--dark-blue) !important;
+    border-top: 3px solid var(--primary-gold); /* Divisória dourada no rodapé */
+  }

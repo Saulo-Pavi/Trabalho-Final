@@ -1,0 +1,283 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Faxinaê - Menos rotina, mais você</title>
+  
+    <!-- Bootstrap 5 CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <!-- Bootstrap Icons -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css" rel="stylesheet">
+    
+    <!-- Arquivo de Estilos CSS Personalizado -->
+    <link rel="stylesheet" href="style.css">
+  </head>
+
+<body class="bg-light">
+
+<!-- ========================================== -->
+<!--               MENU PRINCIPAL               -->
+<!-- ========================================== -->
+<nav class="navbar navbar-expand-lg navbar-dark bg-dark sticky-top">
+  <div class="container">
+    <a class="navbar-brand" href="index.html">
+      <img src="img/logob.png" alt="Faxinaê - Logotipo">
+    </a>
+
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+
+    <div class="collapse navbar-collapse" id="navbarNav">
+      <ul class="navbar-nav ms-auto">
+        <li class="nav-item">
+          <a class="nav-link" href="index.html#inicio">Início</a>
+        </li>
+
+        <!-- Dropdown de Serviços -->
+        <li class="nav-item dropdown">
+          <a class="nav-link dropdown-toggle" href="index.html#servicos" id="navbarDropdownServicos" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+            Serviços
+          </a>
+          <ul class="dropdown-menu" aria-labelledby="navbarDropdownServicos">
+            <li><a class="dropdown-item" href="empresarial.html">Limpeza Empresarial e Comercial</a></li>
+            <li><a class="dropdown-item" href="residencial.html">Limpeza Residencial Completa</a></li>
+            <li><a class="dropdown-item" href="passadoria.html">Passadoria Profissional</a></li>
+          </ul>
+        </li>
+
+        <li class="nav-item">
+          <a class="nav-link" href="sobre.html">Sobre Nós</a>
+        </li>
+
+        <!-- NOVO ITEM DE MENU: BLOG -->
+        <li class="nav-item">
+          <a class="nav-link" href="blog.html">Blog</a>
+        </li>
+
+        <li class="nav-item">
+          <a class="nav-link" href="index.html#depoimentos">Depoimentos</a>
+        </li>
+
+        <li class="nav-item">
+          <a class="nav-link" href="index.html#contato">Contato</a>
+        </li>
+      </ul>
+    </div>
+  </div>
+</nav>
+
+<!-- ========================================== -->
+<!--        SEÇÃO INÍCIO / CARROSSEL            -->
+<!-- ========================================== -->
+<section id="inicio">
+  <div id="carouselDestaques" class="carousel slide" data-bs-ride="carousel">
+    
+    <!-- Indicadores (4 botões para 4 banners) -->
+    <div class="carousel-indicators">
+      <button type="button" data-bs-target="#carouselDestaques" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+      <button type="button" data-bs-target="#carouselDestaques" data-bs-slide-to="1" aria-label="Slide 2"></button>
+      <button type="button" data-bs-target="#carouselDestaques" data-bs-slide-to="2" aria-label="Slide 3"></button>
+      <button type="button" data-bs-target="#carouselDestaques" data-bs-slide-to="3" aria-label="Slide 4"></button>
+    </div>
+
+    <div class="carousel-inner">
+      
+      <!-- Banner 1 -->
+      <div class="carousel-item active" style="height: 400px; background: linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.5)), url('img/carrossel1.jpg') center/cover no-repeat;">
+        <div class="carousel-caption d-flex flex-column align-items-center justify-content-center h-100">
+          <h1 class="display-4 fw-bold">Menos rotina, mais você.</h1>
+          <p class="lead">Cuidamos do trabalho pesado para você aproveitar o seu tempo.</p>
+        </div>
+      </div>
+
+      <!-- Banner 2 -->
+      <div class="carousel-item" style="height: 400px; background: linear-gradient(rgba(0,0,0,0.6), rgba(0,0,0,0.6)), #1a1a1a url('img/testecrs2.jpg') center/cover no-repeat;">
+        <div class="carousel-caption d-flex flex-column align-items-center justify-content-center h-100">
+          <h1 class="display-4 fw-bold">Passadoria Profissional</h1>
+          <p class="lead">Roupas impecáveis e alinhadas para o seu dia a dia.</p>
+        </div>
+      </div>
+
+      <!-- Banner 3 -->
+      <div class="carousel-item" style="height: 400px; background: linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.5)), url('img/testecrs3.jpg') center/cover no-repeat;">
+        <div class="carousel-caption d-flex flex-column align-items-center justify-content-center h-100">
+          <h1 class="display-4 fw-bold">Limpeza Residencial</h1>
+          <p class="lead">Limpeza residencial completa para o seu dia a dia.</p>
+        </div>
+      </div> <!-- <<< ESTA TAG ESTAVA FALTANDO AQUI -->
+
+      <!-- Banner 4 -->
+      <div class="carousel-item" style="height: 400px; background: linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.5)), url('img/testecrs4.jpg') center/cover no-repeat;">
+        <div class="carousel-caption d-flex flex-column align-items-center justify-content-center h-100">
+          <h1 class="display-4 fw-bold">Limpeza Empresarial</h1>
+          <p class="lead">Limpeza empresarial completa para o seu dia a dia.</p>
+        </div>
+      </div>
+
+    </div>
+
+    <!-- Controles de Navegação (Setas) -->
+    <button class="carousel-control-prev" type="button" data-bs-target="#carouselDestaques" data-bs-slide="prev">
+      <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+      <span class="visually-hidden">Anterior</span>
+    </button>
+    <button class="carousel-control-next" type="button" data-bs-target="#carouselDestaques" data-bs-slide="next">
+      <span class="carousel-control-next-icon" aria-hidden="true"></span>
+      <span class="visually-hidden">Próximo</span>
+    </button>
+  </div>
+</section>
+
+  <!-- ========================================== -->
+  <!--         SOBRE A EMPRESA & MAPA             -->
+  <!-- ========================================== -->
+  <section id="empresa" class="bg-white py-5">
+    <div class="container">
+      <div class="row align-items-center">
+        <!-- Informações Institucionais -->
+        <div class="col-lg-6">
+          <h2 class="fw-bold mb-3">Faxinaê Serviços de Limpeza</h2>
+          <p class="lead text-gold font-italic">"Menos rotina, mais você."</p>
+          <p>A Faxinaê nasceu para devolver às pessoas o seu recurso mais valioso: o tempo. Ao perceber a sobrecarga de famílias e gestores, criamos uma solução prática e moderna que une agilidade digital à mão de obra qualificada e confiável.</p>
+          
+          <!-- Accordion Bootstrap -->
+          <div class="accordion mb-4" id="accordionEmpresa">
+            <div class="accordion-item">
+              <h2 class="accordion-header" id="headingOne">
+                <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne">
+                  Missão, Visão e Valores
+                </button>
+              </h2>
+              <div id="collapseOne" class="accordion-collapse collapse show" data-bs-parent="#accordionEmpresa">
+                <div class="accordion-body">
+                  <strong>Missão:</strong> Entregar ambientes impecáveis e livres de preocupações.<br>
+                  <strong>Visão:</strong> Ser a principal referência em agilidade e padrão de limpeza.<br>
+                  <strong>Valores:</strong> Confiança, atenção aos detalhes, pontualidade e praticidade.
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        
+        <!-- Mapa do Google Maps -->
+        <div class="col-lg-6">
+          <h5 class="fw-bold"><i class="bi bi-geo-alt-fill text-danger"></i> Nosso Endereço</h5>
+          <p class="mb-2">Av. Fernando Machado, 4000 D - Líder, Chapecó - SC, 89805-203</p>
+          <div class="ratio ratio-16x9 rounded shadow-sm">
+            <iframe 
+              src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3551.4883407981355!2d-52.61741542455365!3d-27.093649976540656!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x94e4b50c023d8393%3A0x6b8aa107d307137f!2sAv.%20Fernando%20Machado%2C%204000D%20-%20L%C3%ADder%2C%20Chapec%C3%B3%20-%20SC%2C%2089805-203!5e0!3m2!1spt-BR!2sbr!4v1710000000000!5m2!1spt-BR!2sbr" 
+              style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+ <!-- ========================================== -->
+<!--             SEÇÃO DEPOIMENTOS              -->
+<!-- ========================================== -->
+<section id="depoimentos" class="py-5 bg-light">
+  <div class="container">
+    <div class="text-center mb-5">
+      <h2 class="display-6 fw-bold text-blue">O que dizem nossos clientes</h2>
+      <p class="lead text-muted">Confira a experiência de quem já utiliza nossos serviços no dia a dia.</p>
+    </div>
+
+    <!-- Container onde o JavaScript vai injetar os cards vindos do MySQL -->
+    <div class="row g-4 justify-content-center mb-5" id="lista-depoimentos">
+      <!-- Carregado dinamicamente via fetch() -->
+    </div>
+
+    <!-- Formulário para inserir novos depoimentos -->
+    <div class="row justify-content-center">
+      <div class="col-md-8 col-lg-6">
+        <div class="card border-0 shadow-sm p-4">
+          <h5 class="fw-bold text-center mb-3">Deixe seu depoimento</h5>
+          <form id="form-depoimento">
+            <div class="mb-3">
+              <label for="dep-nome" class="form-label">Seu Nome</label>
+              <input type="text" class="form-control" id="dep-nome" name="nome" placeholder="Ex: João Silva" required>
+            </div>
+            <div class="mb-3">
+              <label for="dep-perfil" class="form-label">Perfil ou Profissão</label>
+              <input type="text" class="form-control" id="dep-perfil" name="perfil" placeholder="Ex: Cliente Residencial / Empresário" required>
+            </div>
+            <div class="mb-3">
+              <label for="dep-comentario" class="form-label">Seu Comentário</label>
+              <textarea class="form-control" id="dep-comentario" name="comentario" rows="3" placeholder="Conte como foi sua experiência com a Faxinaê..." required></textarea>
+            </div>
+            <button type="submit" class="btn btn-primary w-100">Publicar Depoimento</button>
+            <div id="feedback-depoimento" class="mt-3"></div>
+          </form>
+        </div>
+      </div>
+    </div>
+
+  </div>
+</section>
+
+  <!-- ========================================== -->
+  <!--             FORMULÁRIO DE CONTATO          -->
+  <!-- ========================================== -->
+  <section id="contato" class="bg-white py-5">
+    <div class="container">
+      <h2 class="text-center fw-bold mb-4">Fale Conosco</h2>
+      <div class="row">
+        <!-- Form de Envio -->
+        <div class="col-md-6 mb-4">
+          <form id="form-contato">
+            <div class="mb-3">
+              <label for="nome" class="form-label">Nome Completo</label>
+              <input type="text" class="form-control" id="nome" name="nome" required>
+            </div>
+            <div class="mb-3">
+              <label for="email" class="form-label">E-mail</label>
+              <input type="email" class="form-control" id="email" name="email" required>
+            </div>
+            <div class="mb-3">
+              <label for="mensagem" class="form-label">Mensagem</label>
+              <textarea class="form-control" id="mensagem" name="mensagem" rows="4" required></textarea>
+            </div>
+            <button type="submit" class="btn btn-primary w-100">Enviar Mensagem</button>
+            <div id="feedback-contato" class="mt-3"></div>
+          </form>
+        </div>
+        
+        <!-- Detalhes de Contato -->
+        <div class="col-md-6 ps-md-5">
+          <h5 class="fw-bold mb-3">Informações de Contato</h5>
+          <p><i class="bi bi-building"></i> <strong>Faxinaê Serviços de Limpeza LTDA</strong></p>
+          <p><i class="bi bi-telephone-fill"></i> (49) 99836-9751</p>
+          <p><i class="bi bi-envelope-fill"></i> contato@faxinae.com.br</p>
+          <hr>
+          <h6 class="fw-bold">Redes Sociais</h6>
+          <a href="#" class="btn btn-outline-primary btn-sm me-2"><i class="bi bi-instagram"></i> Instagram</a>
+          <a href="#" class="btn btn-outline-primary btn-sm"><i class="bi bi-facebook"></i> Facebook</a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ========================================== -->
+  <!--          BOTÃO WHATSAPP FIXO               -->
+  <!-- ========================================== -->
+  <a href="https://wa.me/5549998369751" target="_blank" class="btn btn-success whatsapp-btn shadow">
+    <i class="bi bi-whatsapp"></i> Fale no WhatsApp
+  </a>
+
+  <!-- ========================================== -->
+  <!--                  RODAPÉ                    -->
+  <!-- ========================================== -->
+  <footer class="bg-dark text-white text-center py-3">
+    <div class="container">
+      <p class="mb-0">Saulo Pavi - Todos os direitos reservados.</p>
+    </div>
+  </footer>
+
+  <!-- JS do Bootstrap 5 (Necessário para o funcionamento dos dropdowns e carrossel) -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+  <script src="js/main.js"></script>
+</body>
+</html>

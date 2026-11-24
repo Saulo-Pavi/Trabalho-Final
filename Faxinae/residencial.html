@@ -1,0 +1,338 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Limpeza Residencial Completa - Faxinaê</title>
+
+  <!-- Bootstrap 5 CSS -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+  <!-- Bootstrap Icons -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css" rel="stylesheet">
+  
+  <!-- Arquivo de Estilos Personalizado (Azul e Dourado) -->
+  <link rel="stylesheet" href="style.css">
+</head>
+<body class="bg-light">
+
+  <!-- ========================================== -->
+  <!--               MENU PRINCIPAL               -->
+  <!-- ========================================== -->
+  <nav class="navbar navbar-expand-lg navbar-dark bg-dark sticky-top">
+    <div class="container">
+      <a class="navbar-brand" href="index.html">
+        <img src="img/logob.png" alt="Faxinaê - Logotipo">
+      </a>
+
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+
+      <div class="collapse navbar-collapse" id="navbarNav">
+        <ul class="navbar-nav ms-auto">
+          <li class="nav-item">
+            <a class="nav-link" href="index.html#inicio">Início</a>
+          </li>
+
+          <!-- Dropdown de Serviços -->
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle" href="index.html#servicos" id="navbarDropdownServicos" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+              Serviços
+            </a>
+            <ul class="dropdown-menu" aria-labelledby="navbarDropdownServicos">
+              <li><a class="dropdown-item" href="empresarial.html">Limpeza Empresarial e Comercial</a></li>
+              <li><a class="dropdown-item" href="residencial.html">Limpeza Residencial Completa</a></li>
+              <li><a class="dropdown-item" href="passadoria.html">Passadoria Profissional</a></li>
+            </ul>
+          </li>
+
+          <li class="nav-item">
+            <a class="nav-link" href="sobre.html">Sobre Nós</a>
+          </li>
+
+          <li class="nav-item">
+            <a class="nav-link" href="blog.html">Blog</a>
+          </li>
+
+          <li class="nav-item">
+            <a class="nav-link" href="index.html#depoimentos">Depoimentos</a>
+          </li>
+
+          <li class="nav-item">
+            <a class="nav-link" href="index.html#contato">Contato</a>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+  <!-- ========================================== -->
+  <!--             CABEÇALHO DA PÁGINA            -->
+  <!-- ========================================== -->
+  <section class="bg-white py-5 border-bottom">
+    <div class="container text-center">
+      <h1 class="display-5 fw-bold text-blue mb-3">Limpeza Residencial Completa</h1>
+      <p class="lead text-muted max-w-700 mx-auto">
+        A Faxinaê trabalha com horas contratadas. Nossos profissionais parceiros estarão disponíveis para executar as rotinas e suas prioridades dentro do tempo acordado.
+      </p>
+      <!-- Botão corrigido apontando para #modalOrcamentoResidencial -->
+      <button class="btn btn-primary btn-lg mt-3 shadow" data-bs-toggle="modal" data-bs-target="#modalOrcamentoResidencial">
+        <i class="bi bi-calculator me-2"></i> Solicitar Orçamento
+      </button>
+    </div>
+  </section>
+
+  <!-- ========================================== -->
+  <!--     O QUE ESTÁ INCLUSO (CARD GRID)        -->
+  <!-- ========================================== -->
+  <section class="container my-5 py-4">
+    <div class="text-center mb-5">
+      <h2 class="fw-bold">O que está incluso na <span class="text-gold">Limpeza Residencial</span></h2>
+      <p class="text-muted mb-2">Confira as tarefas que podem ser realizadas dentro do período de horas contratadas:</p>
+      <span class="badge bg-gold text-dark fs-6 font-monospace">A partir de R$ 45,00/hora</span>
+    </div>
+
+    <!-- Container dos blocos estilo dashboard/cards -->
+    <div class="row g-4 justify-content-center">
+      
+      <!-- Banheiros -->
+      <div class="col-lg-4 col-md-6">
+        <div class="card h-100 shadow-sm border-0">
+          <div class="card-header bg-gold text-dark font-weight-bold text-center py-3 fs-5 fw-bold">
+            <i class="bi bi-droplet-fill me-2"></i> Banheiros
+          </div>
+          <div class="card-body bg-white">
+            <ul class="list-unstyled mb-0">
+              <li class="py-2 border-bottom"><i class="bi bi-check2 text-gold me-2"></i> Limpeza de pias e bancadas</li>
+              <li class="py-2 border-bottom"><i class="bi bi-check2 text-gold me-2"></i> Limpeza de pisos e revestimentos</li>
+              <li class="py-2 border-bottom"><i class="bi bi-check2 text-gold me-2"></i> Limpeza do vaso sanitário e banheira</li>
+              <li class="py-2 border-bottom"><i class="bi bi-check2 text-gold me-2"></i> Limpeza do box, espelhos e vidros</li>
+              <li class="py-2 border-bottom"><i class="bi bi-check2 text-gold me-2"></i> Limpeza interna de janelas</li>
+              <li class="py-2 border-bottom"><i class="bi bi-check2 text-gold me-2"></i> Limpeza de portas</li>
+              <li class="py-2"><i class="bi bi-check2 text-gold me-2"></i> Remoção do lixo</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+
+      <!-- Cozinha -->
+      <div class="col-lg-4 col-md-6">
+        <div class="card h-100 shadow-sm border-0">
+          <div class="card-header bg-gold text-dark font-weight-bold text-center py-3 fs-5 fw-bold">
+            <i class="bi bi-cup-hot-fill me-2"></i> Cozinha
+          </div>
+          <div class="card-body bg-white">
+            <ul class="list-unstyled mb-0">
+              <li class="py-2 border-bottom"><i class="bi bi-check2 text-gold me-2"></i> Lavagem de louças</li>
+              <li class="py-2 border-bottom"><i class="bi bi-check2 text-gold me-2"></i> Limpeza da superfície de móveis</li>
+              <li class="py-2 border-bottom"><i class="bi bi-check2 text-gold me-2"></i> Limpeza de pisos e revestimentos</li>
+              <li class="py-2 border-bottom"><i class="bi bi-check2 text-gold me-2"></i> Limpeza externa de geladeira e fogão</li>
+              <li class="py-2 border-bottom"><i class="bi bi-check2 text-gold me-2"></i> Limpeza externa do micro-ondas</li>
+              <li class="py-2 border-bottom"><i class="bi bi-check2 text-gold me-2"></i> Limpeza interna de janelas</li>
+              <li class="py-2"><i class="bi bi-check2 text-gold me-2"></i> Limpeza de portas</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+
+      <!-- Quartos -->
+      <div class="col-lg-4 col-md-6">
+        <div class="card h-100 shadow-sm border-0">
+          <div class="card-header bg-gold text-dark font-weight-bold text-center py-3 fs-5 fw-bold">
+            <i class="bi bi-door-closed-fill me-2"></i> Quartos
+          </div>
+          <div class="card-body bg-white">
+            <ul class="list-unstyled mb-0">
+              <li class="py-2 border-bottom"><i class="bi bi-check2 text-gold me-2"></i> Limpeza da superfície de móveis</li>
+              <li class="py-2 border-bottom"><i class="bi bi-check2 text-gold me-2"></i> Limpeza dos pisos e rodapés</li>
+              <li class="py-2 border-bottom"><i class="bi bi-check2 text-gold me-2"></i> Limpeza interna de janelas</li>
+              <li class="py-2 border-bottom"><i class="bi bi-check2 text-gold me-2"></i> Limpeza de espelhos e vidros</li>
+              <li class="py-2"><i class="bi bi-check2 text-gold me-2"></i> Limpeza de portas</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+
+      <!-- Sala -->
+      <div class="col-lg-4 col-md-6">
+        <div class="card h-100 shadow-sm border-0">
+          <div class="card-header bg-gold text-dark font-weight-bold text-center py-3 fs-5 fw-bold">
+            <i class="bi bi-tv-fill me-2"></i> Sala
+          </div>
+          <div class="card-body bg-white">
+            <ul class="list-unstyled mb-0">
+              <li class="py-2 border-bottom"><i class="bi bi-check2 text-gold me-2"></i> Limpeza dos pisos e rodapés</li>
+              <li class="py-2 border-bottom"><i class="bi bi-check2 text-gold me-2"></i> Aspiração de sofá, poltronas e tapetes</li>
+              <li class="py-2 border-bottom"><i class="bi bi-check2 text-gold me-2"></i> Limpeza da superfície de móveis</li>
+              <li class="py-2 border-bottom"><i class="bi bi-check2 text-gold me-2"></i> Limpeza de portas</li>
+              <li class="py-2 border-bottom"><i class="bi bi-check2 text-gold me-2"></i> Limpeza de vidros</li>
+              <li class="py-2"><i class="bi bi-check2 text-gold me-2"></i> Limpeza interna de janelas</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+
+      <!-- Área Externa -->
+      <div class="col-lg-4 col-md-6">
+        <div class="card h-100 shadow-sm border-0">
+          <div class="card-header bg-gold text-dark font-weight-bold text-center py-3 fs-5 fw-bold">
+            <i class="bi bi-house-door-fill me-2"></i> Área Externa
+          </div>
+          <div class="card-body bg-white">
+            <ul class="list-unstyled mb-0">
+              <li class="py-2 border-bottom"><i class="bi bi-check2 text-gold me-2"></i> Limpeza de pisos de garagem</li>
+              <li class="py-2 border-bottom"><i class="bi bi-check2 text-gold me-2"></i> Varrimento de quintal</li>
+              <li class="py-2 border-bottom"><i class="bi bi-check2 text-gold me-2"></i> Limpeza de varanda e terraço</li>
+              <li class="py-2"><i class="bi bi-check2 text-gold me-2"></i> Organização das áreas abertas</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+
+    </div>
+  </section>
+
+<!-- ========================================== -->
+<!--          VÍDEO E GALERIA DE FOTOS          -->
+<!-- ========================================== -->
+<section class="bg-white py-5 border-top">
+  <div class="container">
+    <h2 class="text-center fw-bold mb-5">Conheça Nossas Soluções <span class="text-gold">Corporativas</span></h2>
+    
+    <div class="row align-items-stretch g-4">
+      
+      <!-- Vídeo Incorporado do YouTube (Corrigido e Testado) -->
+      <div class="col-lg-6">
+        <div class="ratio ratio-16x9 rounded shadow h-100">
+          <iframe 
+            src="https://www.youtube.com/embed/G7TPbk19SaY" 
+            title="Dicas de Limpeza Profissional - Maria Marios" 
+            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" 
+            allowfullscreen>
+          </iframe>
+        </div>
+      </div>
+
+      <!-- Duas Fotos do Serviço (Alinhadas perfeitamente com a altura do vídeo) -->
+      <div class="col-lg-6">
+        <div class="row g-3 h-100">
+          <div class="col-6 h-100">
+            <img src="img/residencial1.jpg" class="img-fluid rounded shadow-sm w-100 h-100" style="object-fit: cover; min-height: 250px;" alt="Serviço de Limpeza Residencial 1">
+          </div>
+          <div class="col-6 h-100">
+            <img src="img/residencial2.jpg" class="img-fluid rounded shadow-sm w-100 h-100" style="object-fit: cover; min-height: 250px;" alt="Serviço de Limpeza Residencial 2">
+          </div>
+        </div>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+
+  <!-- ========================================== -->
+  <!--     MODAL DE ORÇAMENTO - LIMPEZA RESIDENCIAL -->
+  <!-- ========================================== -->
+  <div class="modal fade" id="modalOrcamentoResidencial" tabindex="-1" aria-labelledby="modalOrcamentoResidencialLabel" aria-hidden="true">
+    <div class="modal-dialog modal-lg modal-dialog-centered">
+      <div class="modal-content border-0 shadow">
+        
+        <!-- Cabeçalho do Modal -->
+        <div class="modal-header bg-dark text-white border-bottom border-warning">
+          <h5 class="modal-title fw-bold d-flex align-items-center" id="modalOrcamentoResidencialLabel">
+            <i class="bi bi-house-check me-2 text-warning"></i> Orçamento para Limpeza Residencial
+          </h5>
+          <button type="button" class="btn-close btn-close-white" data-bs-dismiss="modal" aria-label="Fechar"></button>
+        </div>
+
+        <!-- Corpo do Modal / Formulário -->
+        <div class="modal-body p-4">
+          
+          <div class="alert alert-info d-flex align-items-center mb-4" role="alert">
+            <i class="bi bi-info-circle-fill me-3 fs-4 text-primary"></i>
+            <div class="small">
+              Preencha os detalhes do seu imóvel abaixo para calcularmos o orçamento ideal para a sua residência.
+            </div>
+          </div>
+
+          <form id="formOrcamentoResidencial">
+            <div class="row g-3">
+              
+              <div class="col-md-6">
+                <label for="nomeResidencial" class="form-label fw-semibold text-dark">Nome Completo *</label>
+                <input type="text" class="form-control" id="nomeResidencial" placeholder="Seu nome completo" required>
+              </div>
+
+              <div class="col-md-6">
+                <label for="telefoneResidencial" class="form-label fw-semibold text-dark">Telefone / WhatsApp *</label>
+                <input type="tel" class="form-control" id="telefoneResidencial" placeholder="(49) 99999-9999" required>
+              </div>
+
+              <div class="col-md-6">
+                <label for="emailResidencial" class="form-label fw-semibold text-dark">E-mail *</label>
+                <input type="email" class="form-control" id="emailResidencial" placeholder="seuemail@exemplo.com" required>
+              </div>
+
+              <div class="col-md-6">
+                <label for="tipoResidencia" class="form-label fw-semibold text-dark">Tipo de Imóvel</label>
+                <select class="form-select" id="tipoResidencia">
+                  <option selected>Selecione uma opção...</option>
+                  <option value="apartamento">Apartamento</option>
+                  <option value="casa">Casa</option>
+                  <option value="sobrado">Sobrado / Duplex</option>
+                </select>
+              </div>
+
+              <div class="col-md-6">
+                <label for="frequenciaResidencial" class="form-label fw-semibold text-dark">Frequência Desejada</label>
+                <select class="form-select" id="frequenciaResidencial">
+                  <option selected>Selecione uma opção...</option>
+                  <option value="avulsa">Faxina Avulsa (Única)</option>
+                  <option value="semanal">Semanal</option>
+                  <option value="quinzenal">Quinzenal</option>
+                  <option value="mensal">Mensal</option>
+                </select>
+              </div>
+
+              <div class="col-md-6">
+                <label for="qtdComodos" class="form-label fw-semibold text-dark">Cômodos (Nº Quartos / Banheiros)</label>
+                <input type="text" class="form-control" id="qtdComodos" placeholder="Ex: 2 quartos, 2 banheiros">
+              </div>
+
+              <div class="col-12">
+                <label for="observacoesResidencial" class="form-label fw-semibold text-dark">Detalhes Adicionais do Imóvel</label>
+                <textarea class="form-control" id="observacoesResidencial" rows="3" placeholder="Ex: Possui animais de estimação, necessita incluir limpeza de sacada/janelas, horários de preferência..."></textarea>
+              </div>
+
+            </div>
+          </form>
+        </div>
+
+        <!-- Rodapé do Modal -->
+        <div class="modal-footer bg-light">
+          <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Cancelar</button>
+          <button type="submit" form="formOrcamentoResidencial" class="btn btn-primary px-4 fw-bold">
+            <i class="bi bi-send me-1"></i> Solicitar Orçamento
+          </button>
+        </div>
+
+      </div>
+    </div>
+  </div>
+
+  <!-- Botão Flutuante do WhatsApp -->
+  <a href="https://wa.me/5549998369751" target="_blank" class="btn btn-success whatsapp-btn shadow">
+    <i class="bi bi-whatsapp"></i> Fale no WhatsApp
+  </a>
+
+  <!-- Rodapé -->
+  <footer class="bg-dark text-white text-center py-3 mt-5">
+    <div class="container">
+      <p class="mb-0">Saulo Pavi - Todos os direitos reservados.</p>
+    </div>
+  </footer>
+
+  <!-- Bootstrap 5 JS Bundle -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>

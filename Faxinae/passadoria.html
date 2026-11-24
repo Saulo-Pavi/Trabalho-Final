@@ -1,0 +1,306 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Passadoria Profissional - Faxinaê</title>
+
+  <!-- Bootstrap 5 CSS -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+  <!-- Bootstrap Icons -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css" rel="stylesheet">
+  
+  <!-- Arquivo de Estilos Personalizado (Azul e Dourado) -->
+  <link rel="stylesheet" href="style.css">
+</head>
+<body class="bg-light">
+
+  <!-- ========================================== -->
+<!--               MENU PRINCIPAL               -->
+<!-- ========================================== -->
+<nav class="navbar navbar-expand-lg navbar-dark bg-dark sticky-top">
+    <div class="container">
+      <a class="navbar-brand" href="index.html">
+        <img src="img/logob.png" alt="Faxinaê - Logotipo">
+      </a>
+  
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+  
+      <div class="collapse navbar-collapse" id="navbarNav">
+        <ul class="navbar-nav ms-auto">
+          <li class="nav-item">
+            <a class="nav-link" href="index.html#inicio">Início</a>
+          </li>
+  
+          <!-- Dropdown de Serviços -->
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle" href="index.html#servicos" id="navbarDropdownServicos" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+              Serviços
+            </a>
+            <ul class="dropdown-menu" aria-labelledby="navbarDropdownServicos">
+              <li><a class="dropdown-item" href="empresarial.html">Limpeza Empresarial e Comercial</a></li>
+              <li><a class="dropdown-item" href="residencial.html">Limpeza Residencial Completa</a></li>
+              <li><a class="dropdown-item" href="passadoria.html">Passadoria Profissional</a></li>
+            </ul>
+          </li>
+  
+          <li class="nav-item">
+            <a class="nav-link" href="sobre.html">Sobre Nós</a>
+          </li>
+  
+          <!-- NOVO ITEM DE MENU: BLOG -->
+          <li class="nav-item">
+            <a class="nav-link" href="blog.html">Blog</a>
+          </li>
+  
+          <li class="nav-item">
+            <a class="nav-link" href="index.html#depoimentos">Depoimentos</a>
+          </li>
+  
+          <li class="nav-item">
+            <a class="nav-link" href="index.html#contato">Contato</a>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+  <!-- ========================================== -->
+  <!--             CABEÇALHO DA PÁGINA            -->
+  <!-- ========================================== -->
+  <section class="bg-white py-5 border-bottom">
+    <div class="container text-center">
+      <h1 class="display-5 fw-bold text-blue mb-3">Como funciona o serviço de Passadoria?</h1>
+      <p class="lead text-muted max-w-700 mx-auto mb-3">
+        Com a Faxinaê, você contrata o serviço de passadoria de forma prática, rápida e sem burocracia. Você pode escolher o período de atendimento que melhor se adapta à sua necessidade: 4, 6 ou 8 horas. Durante o tempo contratado, o(a) profissional parceiro(a) permanece disponível em sua residência para realizar a passadoria das peças.
+      </p>
+
+      <!-- Destaque do Valor da Hora -->
+      <div class="d-inline-block bg-light border border-warning rounded-pill px-4 py-2 mb-3 shadow-sm">
+        <span class="text-muted fw-semibold">Valor da hora contratada:</span> 
+        <strong class="fs-4 text-blue ms-1">R$ 40,00</strong> <small class="text-muted">/ hora</small>
+      </div>
+
+      <div>
+        <!-- Botão para abrir o Modal de Orçamento -->
+        <button class="btn btn-primary btn-lg mt-2 shadow" data-bs-toggle="modal" data-bs-target="#modalOrcamentoPassadoria">
+          <i class="bi bi-calculator me-2"></i> Solicitar Orçamento
+        </button>
+      </div>
+    </div>
+  </section>
+
+  <!-- ========================================== -->
+  <!--   ESTIMATIVA POR PERÍODO CONTRATADO       -->
+  <!-- ========================================== -->
+  <section class="container my-5 py-4">
+    <div class="text-center mb-5">
+      <h2 class="fw-bold">Quantidade estimada por <span class="text-gold">período contratado</span></h2>
+      <p class="text-muted mb-2">Confira a previsão de peças que podem ser passadas de acordo com o tempo de atendimento:</p>
+      <span class="badge bg-gold text-dark fs-6 font-monospace">A partir de R$ 40,00/hora</span>
+    </div>
+
+    <!-- Grid de Pacotes de Horas -->
+    <div class="row g-4 justify-content-center">
+      
+      <!-- 4 Horas -->
+      <div class="col-lg-4 col-md-6">
+        <div class="card h-100 shadow-sm border-0">
+          <div class="card-header bg-gold text-dark font-weight-bold text-center py-3 fs-4 fw-bold">
+            <i class="bi bi-clock-history me-2"></i> 4 Horas
+          </div>
+          <div class="card-body bg-white text-center d-flex flex-column justify-content-center py-4">
+            <ul class="list-unstyled mb-0">
+              <li class="fs-5 py-2"><i class="bi bi-check2-circle text-gold me-2"></i> Previsão de <strong>até 30 peças</strong></li>
+            </ul>
+          </div>
+        </div>
+      </div>
+
+      <!-- 6 Horas -->
+      <div class="col-lg-4 col-md-6">
+        <div class="card h-100 shadow-sm border-0">
+          <div class="card-header bg-gold text-dark font-weight-bold text-center py-3 fs-4 fw-bold">
+            <i class="bi bi-clock-history me-2"></i> 6 Horas
+          </div>
+          <div class="card-body bg-white text-center d-flex flex-column justify-content-center py-4">
+            <ul class="list-unstyled mb-0">
+              <li class="fs-5 py-2"><i class="bi bi-check2-circle text-gold me-2"></i> Previsão de <strong>até 45 peças</strong></li>
+            </ul>
+          </div>
+        </div>
+      </div>
+
+      <!-- 8 Horas -->
+      <div class="col-lg-4 col-md-6">
+        <div class="card h-100 shadow-sm border-0">
+          <div class="card-header bg-gold text-dark font-weight-bold text-center py-3 fs-4 fw-bold">
+            <i class="bi bi-clock-history me-2"></i> 8 Horas
+          </div>
+          <div class="card-body bg-white text-center d-flex flex-column justify-content-center py-4">
+            <ul class="list-unstyled mb-0">
+              <li class="fs-5 py-2"><i class="bi bi-check2-circle text-gold me-2"></i> Previsão de <strong>até 60 peças</strong></li>
+            </ul>
+          </div>
+        </div>
+      </div>
+
+    </div>
+
+    <p class="text-center text-muted fst-italic mt-4 small">
+      * As quantidades podem variar conforme o tipo de tecido, tamanho das peças e nível de amassado.
+    </p>
+  </section>
+
+ <!-- ========================================== -->
+<!--       VÍDEO DE PASSADORIA E FOTOS          -->
+<!-- ========================================== -->
+<section class="bg-white py-5 border-top">
+    <div class="container">
+      <h2 class="text-center fw-bold mb-5">Serviço de <span class="text-gold">Passadoria Profissional</span></h2>
+      
+      <div class="row align-items-stretch g-4">
+        
+        <!-- Vídeo Incorporado do YouTube (Dicas de Passadoria) -->
+        <div class="col-lg-6">
+          <div class="ratio ratio-16x9 rounded shadow h-100">
+            <iframe 
+              src="https://www.youtube.com/embed/wYtQAMo13gY" 
+              title="Dicas de Passadoria de Roupas" 
+              allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" 
+              allowfullscreen>
+            </iframe>
+          </div>
+        </div>
+  
+        <!-- Duas Fotos do Serviço de Passadoria -->
+        <div class="col-lg-6">
+          <div class="row g-3 h-100">
+            <div class="col-6 h-100">
+              <img src="img/passadoria1.jpg" class="img-fluid rounded shadow-sm w-100 h-100" style="object-fit: cover; min-height: 250px;" alt="Serviço de Passadoria de Roupas 1">
+            </div>
+            <div class="col-6 h-100">
+              <img src="img/passadoria2.jpg" class="img-fluid rounded shadow-sm w-100 h-100" style="object-fit: cover; min-height: 250px;" alt="Serviço de Passadoria de Roupas 2">
+            </div>
+          </div>
+        </div>
+  
+      </div>
+    </div>
+  </section>
+
+  <!-- ========================================== -->
+  <!--            MODAL DE ORÇAMENTO             -->
+  <!-- ========================================== -->
+  <div class="modal fade" id="modalOrcamentoPassadoria" tabindex="-1" aria-labelledby="modalOrcamentoPassadoriaLabel" aria-hidden="true">
+    <div class="modal-dialog modal-lg modal-dialog-centered">
+      <div class="modal-content">
+        
+        <!-- Cabeçalho do Modal -->
+        <div class="modal-header bg-dark text-white border-bottom border-warning">
+          <h5 class="modal-title fw-bold" id="modalOrcamentoPassadoriaLabel">
+            <i class="bi bi-basket-check text-gold me-2"></i> Solicitar Orçamento - Passadoria Profissional
+          </h5>
+          <button type="button" class="btn-close btn-close-white" data-bs-dismiss="modal" aria-label="Fechar"></button>
+        </div>
+
+        <!-- Corpo do Formulário -->
+        <div class="modal-body p-4">
+          <div class="alert alert-info border-0 bg-light d-flex align-items-center mb-4" role="alert">
+            <i class="bi bi-info-circle-fill fs-4 text-blue me-3"></i>
+            <div>
+              <strong>Investimento:</strong> Valor base de <strong>R$ 40,00 / hora</strong>. Escolha o número de horas desejado abaixo (4h, 6h ou 8h).
+            </div>
+          </div>
+
+          <form id="formOrcamentoPass">
+            <div class="row g-3">
+              <!-- Nome -->
+              <div class="col-md-6">
+                <label for="passNome" class="form-label fw-semibold">Nome Completo *</label>
+                <input type="text" class="form-control" id="passNome" required placeholder="Seu nome">
+              </div>
+
+              <!-- E-mail -->
+              <div class="col-md-6">
+                <label for="passEmail" class="form-label fw-semibold">E-mail *</label>
+                <input type="email" class="form-control" id="passEmail" required placeholder="seu@email.com">
+              </div>
+
+              <!-- Telefone -->
+              <div class="col-md-6">
+                <label for="passTelefone" class="form-label fw-semibold">Telefone / WhatsApp *</label>
+                <input type="tel" class="form-control" id="passTelefone" required placeholder="(49) 99999-9999">
+              </div>
+
+              <!-- Horas Desejadas -->
+              <div class="col-md-6">
+                <label for="passHoras" class="form-label fw-semibold">Pacote de Horas Desejado *</label>
+                <select class="form-select" id="passHoras" required>
+                  <option value="" selected disabled>Selecione uma opção</option>
+                  <option value="4h">4 Horas (até ~30 peças)</option>
+                  <option value="6h">6 Horas (até ~45 peças)</option>
+                  <option value="8h">8 Horas (até ~60 peças)</option>
+                </select>
+              </div>
+
+              <!-- Data Desejada -->
+              <div class="col-md-6">
+                <label for="passData" class="form-label fw-semibold">Data Desejada *</label>
+                <input type="date" class="form-control" id="passData" required>
+              </div>
+
+              <!-- Endereço -->
+              <div class="col-md-6">
+                <label for="passEndereco" class="form-label fw-semibold">Endereço *</label>
+                <input type="text" class="form-control" id="passEndereco" required placeholder="Rua, Número, Bairro">
+              </div>
+
+              <!-- Cidade -->
+              <div class="col-md-8">
+                <label for="passCidade" class="form-label fw-semibold">Cidade *</label>
+                <input type="text" class="form-control" id="passCidade" required placeholder="Chapecó">
+              </div>
+
+              <!-- UF -->
+              <div class="col-md-4">
+                <label for="passUf" class="form-label fw-semibold">UF *</label>
+                <input type="text" class="form-control" id="passUf" maxlength="2" required placeholder="SC">
+              </div>
+
+              <!-- Observações -->
+              <div class="col-12">
+                <label for="passObs" class="form-label fw-semibold">Observações / Tipos de Peças</label>
+                <textarea class="form-control" id="passObs" rows="3" placeholder="Informe se há muitas camisas sociais, vestidos delicados ou preferências sobre dobrar/pendurar..."></textarea>
+              </div>
+            </div>
+
+            <div class="mt-4 text-end">
+              <button type="button" class="btn btn-secondary me-2" data-bs-dismiss="modal">Cancelar</button>
+              <button type="submit" class="btn btn-primary px-4">Enviar Solicitação</button>
+            </div>
+          </form>
+        </div>
+
+      </div>
+    </div>
+  </div>
+
+  <!-- Botão Flutuante do WhatsApp -->
+  <a href="https://wa.me/5549998369751" target="_blank" class="btn btn-success whatsapp-btn shadow">
+    <i class="bi bi-whatsapp"></i> Fale no WhatsApp
+  </a>
+
+  <!-- Rodapé -->
+  <footer class="bg-dark text-white text-center py-3 mt-5">
+    <div class="container">
+      <p class="mb-0">Saulo Pavi - Todos os direitos reservados.</p>
+    </div>
+  </footer>
+
+  <!-- Bootstrap 5 JS Bundle -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
